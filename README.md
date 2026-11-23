@@ -1,5 +1,5 @@
 <h1 align="center">Hola, soy Nick 👋</h1>
-<h3 align="center">Backend Developer (Java · Spring Boot) · Estudiante de Ingeniería de Software · Rumbo a Cloud Engineer ☁️</h3>
+<h3 align="center">Backend Developer (Java · Spring Boot) · Estudiante de Ingeniería de Software <br> Rumbo a Cloud Engineer ☁️</h3>
 
 <p align="center">
   <a href="https://www.nick-bern.com"><img src="https://img.shields.io/badge/Portafolio-nick--bern.com-0A0A0A?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portafolio"></a>
