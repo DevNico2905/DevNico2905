@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b24"/>
+      <stop offset="0.55" stop-color="#121552"/>
+      <stop offset="1" stop-color="#0a0d30"/>
+    </linearGradient>
+    <radialGradient id="arc" cx="0.5" cy="0.15" r="0.9">
+      <stop offset="0" stop-color="#5a4ff0"/>
+      <stop offset="0.6" stop-color="#3326b0"/>
+      <stop offset="1" stop-color="#1c167a"/>
+    </radialGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfd8ff"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="340" rx="14"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+    <rect width="1200" height="340" fill="url(#grid)"/>
+
+    <!-- arco central -->
+    <ellipse cx="600" cy="400" rx="390" ry="360" fill="url(#arc)"/>
+    <ellipse cx="600" cy="400" rx="390" ry="360" fill="none" stroke="#8f86ff" stroke-opacity="0.45" stroke-width="2"/>
+
+    <!-- nodos que titilan -->
+    <g fill="#7fe3ff">
+      <circle cx="180" cy="60" r="2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="330" cy="40" r="1.6"><animate attributeName="opacity" values="1;0.2;1" dur="4s" repeatCount="indefinite"/></circle>
+      <circle cx="940" cy="55" r="2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.5s" repeatCount="indefinite"/></circle>
+      <circle cx="1060" cy="95" r="1.6"><animate attributeName="opacity" values="1;0.3;1" dur="2.8s" repeatCount="indefinite"/></circle>
+      <circle cx="80" cy="250" r="1.6"><animate attributeName="opacity" values="0.3;1;0.3" dur="4.2s" repeatCount="indefinite"/></circle>
+      <circle cx="1130" cy="230" r="2"><animate attributeName="opacity" values="1;0.2;1" dur="3.2s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- insignia: nube con < /> -->
+    <g transform="translate(600 92)">
+      <circle r="44" fill="#ffffff"/>
+      <circle r="44" fill="none" stroke="#7fe3ff" stroke-width="3" stroke-opacity="0.6"/>
+      <path d="M-24 10 a12 12 0 0 1 2-23 a16 16 0 0 1 30-6 a12 12 0 0 1 16 14 a10 10 0 0 1-2 15 z" fill="#1c167a"/>
+      <path d="M-8 -6 l-7 7 l7 7 M8 -6 l7 7 l-7 7 M3 -9 l-6 20" fill="none" stroke="#7fe3ff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- título -->
+    <text x="600" y="212" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="800" letter-spacing="4" fill="url(#title)">HELLO WORLD</text>
+    <text x="600" y="244" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="5" fill="#c9c4ff">BACKEND · JAVA &amp; SPRING BOOT · AWS</text>
+
+    <!-- izquierda: web -->
+    <g transform="translate(72 170)" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+      <circle r="13" fill="#ffffff"/>
+      <g fill="none" stroke="#121552" stroke-width="1.6">
+        <circle r="8"/><ellipse rx="3.6" ry="8"/><path d="M-8 0H8"/>
+      </g>
+      <text x="24" y="6" font-size="17" fill="#e6e9ff">nick-bern.com</text>
+    </g>
+
+    <!-- derecha: email -->
+    <g font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+      <g transform="translate(906 170)">
+        <circle r="13" fill="#ffffff"/>
+        <rect x="-7.5" y="-5.5" width="15" height="11" rx="1.5" fill="none" stroke="#121552" stroke-width="1.6"/>
+        <path d="M-7 -4.5 L0 1 L7 -4.5" fill="none" stroke="#121552" stroke-width="1.6"/>
+      </g>
+      <text x="930" y="176" font-size="17" fill="#e6e9ff">bernalnico2905@gmail.com</text>
+    </g>
+
+    <!-- decoración inferior -->
+    <g fill="none" stroke="#a9a3ff" stroke-opacity="0.7" stroke-width="1.6">
+      <path d="M40 300 H150 L170 280 H290"/>
+      <path d="M60 318 L80 298 M90 318 L110 298 M120 318 L140 298"/>
+      <path d="M1160 300 H1050 L1030 280 H910"/>
+      <path d="M1140 318 L1120 298 M1110 318 L1090 298 M1080 318 L1060 298"/>
+    </g>
+  </g>
+</svg>

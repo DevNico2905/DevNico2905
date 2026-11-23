@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420" width="400" height="420">
+  <defs>
+    <linearGradient id="cloud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8b7bff"/>
+      <stop offset="1" stop-color="#4b5fe8"/>
+    </linearGradient>
+    <linearGradient id="rack" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1d2266"/>
+      <stop offset="1" stop-color="#2a2f86"/>
+    </linearGradient>
+    <linearGradient id="db" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0e7490"/>
+      <stop offset="1" stop-color="#22a6c4"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <style>
+    .t { font-family: 'Segoe UI','Helvetica Neue',Arial,sans-serif; font-weight: 700; }
+  </style>
+
+  <!-- sombra base -->
+  <ellipse cx="200" cy="392" rx="130" ry="14" fill="#4b5fe8" opacity="0.18"/>
+
+  <!-- líneas de datos nube <-> servidor -->
+  <g stroke="#7fe3ff" stroke-width="2.5" stroke-dasharray="6 8" fill="none" opacity="0.8">
+    <path d="M170 140 V215"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1s" repeatCount="indefinite"/></path>
+    <path d="M230 140 V215"><animate attributeName="stroke-dashoffset" from="0" to="28" dur="1s" repeatCount="indefinite"/></path>
+    <path d="M290 300 H325"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1.2s" repeatCount="indefinite"/></path>
+  </g>
+  <!-- paquetes -->
+  <circle cx="170" cy="140" r="5" opacity="0" fill="#7fe3ff">
+    <animate attributeName="cy" values="140;215" dur="1.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="230" cy="215" r="5" opacity="0" fill="#ffb454">
+    <animate attributeName="cy" values="215;140" dur="1.6s" begin="0.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="1.6s" begin="0.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- nube flotando -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="4s" repeatCount="indefinite"/>
+    <g filter="url(#glow)" opacity="0.5">
+      <path d="M115 140 a32 32 0 0 1 6-63 a46 46 0 0 1 86-16 a36 36 0 0 1 58 30 a28 28 0 0 1 20 49 z" fill="#7b6cff"/>
+    </g>
+    <path d="M115 140 a32 32 0 0 1 6-63 a46 46 0 0 1 86-16 a36 36 0 0 1 58 30 a28 28 0 0 1 20 49 z" fill="url(#cloud)"/>
+    <text x="200" y="118" text-anchor="middle" class="t" font-size="26" fill="#ffffff" letter-spacing="2">CLOUD</text>
+  </g>
+
+  <!-- rack de servidores -->
+  <g>
+    <rect x="110" y="215" width="180" height="170" rx="14" fill="url(#rack)"/>
+    <rect x="110" y="215" width="180" height="170" rx="14" fill="none" stroke="#8f86ff" stroke-opacity="0.5" stroke-width="2"/>
+    <g>
+      <rect x="126" y="232" width="148" height="40" rx="7" fill="#0b0f3a"/>
+      <rect x="126" y="282" width="148" height="40" rx="7" fill="#0b0f3a"/>
+      <rect x="126" y="332" width="148" height="40" rx="7" fill="#0b0f3a"/>
+    </g>
+    <g stroke="#3d44a8" stroke-width="3" stroke-linecap="round">
+      <path d="M140 252 H200 M140 302 H200 M140 352 H200"/>
+    </g>
+    <!-- LEDs -->
+    <g>
+      <circle cx="240" cy="252" r="5" fill="#3ef0a0"><animate attributeName="opacity" values="1;0.25;1" dur="1.1s" repeatCount="indefinite"/></circle>
+      <circle cx="258" cy="252" r="5" fill="#7fe3ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="0.7s" repeatCount="indefinite"/></circle>
+      <circle cx="240" cy="302" r="5" fill="#3ef0a0"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.4s" repeatCount="indefinite"/></circle>
+      <circle cx="258" cy="302" r="5" fill="#ffb454"><animate attributeName="opacity" values="1;0.3;1" dur="0.9s" repeatCount="indefinite"/></circle>
+      <circle cx="240" cy="352" r="5" fill="#3ef0a0"><animate attributeName="opacity" values="1;0.3;1" dur="1.7s" repeatCount="indefinite"/></circle>
+      <circle cx="258" cy="352" r="5" fill="#7fe3ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite"/></circle>
+    </g>
+  </g>
+
+  <!-- base de datos -->
+  <g transform="translate(325 268)">
+    <path d="M0 10 V54 a28 9 0 0 0 56 0 V10" fill="url(#db)"/>
+    <ellipse cx="28" cy="10" rx="28" ry="9" fill="#5fd4ec"/>
+    <path d="M0 32 a28 9 0 0 0 56 0" fill="none" stroke="#5fd4ec" stroke-width="2"/>
+  </g>
+
+  <!-- taza de café (Java) con vapor -->
+  <g transform="translate(36 318)">
+    <path d="M0 0 H44 V26 a14 14 0 0 1-14 14 H14 A14 14 0 0 1 0 26 Z" fill="#ffb454"/>
+    <path d="M44 6 h6 a9 9 0 0 1 0 18 h-6" fill="none" stroke="#ffb454" stroke-width="4"/>
+    <g fill="none" stroke="#ffb454" stroke-width="3" stroke-linecap="round" opacity="0.8">
+      <path d="M12 -8 q-5 -8 0 -16">
+        <animate attributeName="opacity" values="0;0.9;0" dur="2.4s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0 4;0 -4" dur="2.4s" repeatCount="indefinite"/>
+      </path>
+      <path d="M24 -8 q-5 -8 0 -16">
+        <animate attributeName="opacity" values="0;0.9;0" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0 4;0 -4" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
+      </path>
+      <path d="M36 -8 q-5 -8 0 -16">
+        <animate attributeName="opacity" values="0;0.9;0" dur="2.4s" begin="1.6s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0 4;0 -4" dur="2.4s" begin="1.6s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- etiquetas flotantes -->
+  <g class="t" font-size="14">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="3s" repeatCount="indefinite"/>
+      <rect x="20" y="180" width="78" height="30" rx="15" fill="#2a2f86" stroke="#8f86ff" stroke-opacity="0.6"/>
+      <text x="59" y="200" text-anchor="middle" fill="#ffffff">{ API }</text>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 5;0 0" dur="3.4s" repeatCount="indefinite"/>
+      <rect x="302" y="178" width="78" height="30" rx="15" fill="#2a2f86" stroke="#8f86ff" stroke-opacity="0.6"/>
+      <text x="341" y="198" text-anchor="middle" fill="#ffffff">Spring</text>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="2.8s" repeatCount="indefinite"/>
+      <rect x="18" y="38" width="66" height="30" rx="15" fill="#2a2f86" stroke="#8f86ff" stroke-opacity="0.6"/>
+      <text x="51" y="58" text-anchor="middle" fill="#ffffff">AWS</text>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 4;0 0" dur="3.2s" repeatCount="indefinite"/>
+      <rect x="306" y="30" width="80" height="30" rx="15" fill="#2a2f86" stroke="#8f86ff" stroke-opacity="0.6"/>
+      <text x="346" y="50" text-anchor="middle" fill="#ffffff">Docker</text>
+    </g>
+  </g>
+</svg>
