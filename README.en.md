@@ -1,22 +1,44 @@
-<img src="./assets/banner.svg" width="100%" alt="Hello World — Nick Bernal" />
+<img src="./assets/banner.svg" width="100%" alt="Nicolás Bernal — Backend Developer" />
 
-<img src="./assets/backend-cloud.svg" align="right" width="300" alt="Backend and cloud" />
+<img src="./assets/backend-cloud.svg" align="right" width="280" alt="Backend and cloud" />
 
-## ☕ I'm Nick
+### 👋 Hi, I'm Nick
 
-*Backend Developer · Java & Spring Boot · AWS*
+**Software Engineering** student at Universidad de La Salle and **freelance developer**. I build APIs with Java and Spring Boot, deploy them on AWS, and maintain web applications for real clients.
 
-Software Engineering student at Universidad de La Salle and freelance developer. I build APIs with **Java and Spring Boot**, deploy them on **AWS**, and maintain web applications for real clients.
+**🔭 Right now**
 
-- 🎳 I have a client in production: **[La Bolera Universo](https://bowlingdemo.nick-bern.com)**, a management and scoring system for a bowling alley.
-- 🌿 I built **[Mercado Páramo](https://github.com/DevNico2905/mercado-paramo)**, a direct-sale API for rural farmers ([live Swagger](https://api.mercadoparamo.nick-bern.com/swagger-ui/index.html)).
-- ☁️ Preparing for **AWS Certified Cloud Practitioner**.
-- 🛠️ Java · Spring Boot · PostgreSQL · Angular · Docker · AWS
-- 🎛️ Before coding, I spent 5 years as a live sound technician.
-- 💻 More about me on my **[portfolio](https://www.nick-bern.com)** · **[LinkedIn](https://www.linkedin.com/in/itsnicobernal)**
+- Going deeper into **Spring Boot + Hibernate**
+- Preparing for **AWS Certified Cloud Practitioner**
+- Building **Mercado Páramo** in public
 
-<img src="https://komarev.com/ghpvc/?username=DevNico2905&label=Profile%20views&color=3326b0&style=flat-square" alt="Profile views" /> &nbsp; <a href="./README.md"><img src="https://img.shields.io/badge/Español-57606a?style=flat-square" alt="Español" /></a>
+**⚡ Quick facts**
+
+- 📍 Rionegro, Colombia · 🌎 Native Spanish, English C1
+- 🎛️ Before coding, I spent 5 years as a live sound technician
+- 💻 [Portfolio](https://www.nick-bern.com) · [LinkedIn](https://www.linkedin.com/in/itsnicobernal) · [Español](./README.md)
 
 <br clear="right" />
 
----
+### 🚀 Featured projects
+
+| Project | What it is | Stack | See it |
+|---|---|---|---|
+| **La Bolera Universo** | Management and scoring system for a bowling alley. Real client, in production. | Angular · Electron · Supabase | [Demo](https://bowlingdemo.nick-bern.com) |
+| **Mercado Páramo** | Direct-sale API connecting rural farmers with buyers. | Spring Boot · PostgreSQL · AWS | [Swagger](https://api.mercadoparamo.nick-bern.com/swagger-ui/index.html) · [Repo](https://github.com/DevNico2905/mercado-paramo) |
+| **VetTurno** | Veterinary appointment management API. | Spring Boot · JPA | [Repo](https://github.com/DevNico2905/VetTurno) |
+
+### 🛠️ Stack
+
+| Backend | Frontend | Cloud & DevOps |
+|---|---|---|
+| Java · Spring Boot · JPA/Hibernate<br>PostgreSQL · MySQL · Node.js | Angular · TypeScript<br>Tailwind CSS · Flutter | AWS · Docker · CI/CD<br>Supabase · Vercel |
+
+### 📜 Certifications
+
+- **AWS Academy** — Machine Learning Foundations · Cloud Developing *(in progress)*
+- **Cisco Networking Academy** — Introduction to Networks · Introduction to Cybersecurity
+
+<p align="right">
+  <img src="https://komarev.com/ghpvc/?username=DevNico2905&label=Profile%20views&color=3326b0&style=flat-square" alt="Profile views" />
+</p>
