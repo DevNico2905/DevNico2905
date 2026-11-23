@@ -92,6 +92,6 @@ También he trabajado con **n8n** (agentes de automatización con LLMs), **Resen
 ---
 
 <p align="center">
-  🎹 Fuera del código: canto y toco piano. 🌙 Programo mejor de noche.<br>
+  🎹 Fuera del código: viajo y creo contenido 📷 Programo mejor de noche 🌙 <br>
   <b>¿Buscas un dev junior backend con ganas de aprender? Hablemos.</b>
 </p>
