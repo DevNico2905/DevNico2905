@@ -1,4 +1,4 @@
-<img src="./assets/banner.svg" width="100%" alt="Nicolás Bernal — Backend Developer" />
+<img src="./assets/banner.svg" width="100%" alt="Nicolás Bernal — Backend &amp; Cloud Developer" />
 
 <img src="./assets/backend-cloud.svg" align="right" width="280" alt="Backend y cloud" />
 
@@ -25,8 +25,16 @@ Estudiante de **Ingeniería de Software** en la Universidad de La Salle y **desa
 | Proyecto | Qué es | Stack | Ver |
 |---|---|---|---|
 | **La Bolera Universo** | Gestión y puntuación para una bolera. Cliente real, en producción. | Angular · Electron · Supabase | [Demo](https://bowlingdemo.nick-bern.com) |
-| **Mercado Páramo** | API de venta directa entre productores rurales y compradores. | Spring Boot · PostgreSQL · AWS | [Swagger](https://api.mercadoparamo.nick-bern.com/swagger-ui/index.html) · [Repo](https://github.com/DevNico2905/mercado-paramo) |
+| **Mercado Páramo** | Venta directa entre productores rurales y compradores. API con JWT desplegada en AWS con CI/CD y dominio propio. | Spring Boot · PostgreSQL · AWS | [App](https://mercadoparamo.nick-bern.com) · [Swagger](https://api.mercadoparamo.nick-bern.com/swagger-ui/index.html) · [Repo](https://github.com/DevNico2905/mercado-paramo) |
 | **VetTurno** | API de gestión de turnos veterinarios. | Spring Boot · JPA | [Repo](https://github.com/DevNico2905/VetTurno) |
+
+### ☁️ Cloud & DevOps
+
+| Proyecto | Qué demuestra | Servicios AWS | Ver |
+|---|---|---|---|
+| **Mercado Páramo** | Producción real: cada push a GitHub corre 77 pruebas y despliega solo, con HTTPS y base de datos gestionada. | CodePipeline · CodeBuild · Elastic Beanstalk · RDS · ACM · Amplify · CloudWatch | [Repo](https://github.com/DevNico2905/mercado-paramo) |
+| **students-pipeline-api** | Pipeline CI/CD que bloquea el despliegue si falla un test. | CodePipeline · CodeBuild · Elastic Beanstalk · S3 | [Repo](https://github.com/DevNico2905/students-pipeline-api) |
+| **aws-ecs-students-api** | API en contenedor (Docker multi-stage) corriendo sin servidores que administrar. | ECR · ECS Fargate · CloudWatch Logs | [Repo](https://github.com/DevNico2905/aws-ecs-students-api) |
 
 ### 🛠️ Stack
 
